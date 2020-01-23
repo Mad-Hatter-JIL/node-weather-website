@@ -89,7 +89,7 @@ app.get('*', (req, res) => {
 
 //start up web server using common dev port 3000
 app.listen(port, () =>{
-    console.log('Server is up on port ' + port '.')
+    console.log('Server is up on port ' + port + '.')
 })
 
 // // app.com
