@@ -4,6 +4,7 @@ const app = express()
 const hbs = require('hbs')
 const geocode = require('./utils/geocode.js')
 const forecast = require('./utils/forecast.js')
+const port = process.env.PORT || 3000
 
 //nodemon src/app.js -e js,hbs
 
@@ -87,8 +88,8 @@ app.get('*', (req, res) => {
 })
 
 //start up web server using common dev port 3000
-app.listen(3000, () =>{
-    console.log('Server is up on port 3000.')
+app.listen(port, () =>{
+    console.log('Server is up on port ' + port '.')
 })
 
 // // app.com
